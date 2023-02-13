@@ -134,16 +134,23 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {МГТУ им. Н.Э. Баумана, направление 09.03.01}{09.2019 -- настоящее время}
-      {Системы автоматизированного проектирования, бакалавр}{Москва, Россия}
+      {\begin{tabular}{@{}l@{}@{}}
+      Факультет "Робототехника и комплексная автоматизация",\\
+      кафедра систем автоматизированного проектирования, бакалавр.
+      \end{tabular}}{Москва, Россия}
   \resumeSubHeadingListEnd
+
+\vspace{3pt}
 
 \section{ДОПОЛНИТЕЛЬНОЕ ОБРАЗОВАНИЕ}
 \vspace{10pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {VK education}{09.2021 -- 12.2022}
-      {Основная программа Технопарка VK в МГТУ, направление ML-разработчик}{Москва, Россия}
+      {VK Образование}{09.2021 -- 12.2022}
+      {Выпускник основной программы, направление ML-разработчик.}{Москва, Россия}
   \resumeSubHeadingListEnd
+
+\vspace{3pt}
 
 \section{ОПЫТ РАБОТЫ}
 \vspace{10pt}
@@ -164,35 +171,29 @@
        \resumeProjectHeading
           {\href{https://github.com/made-ml-in-prod-2022/sudotouchwoman}{\textbf{\large{\underline{Production-ready проект ML-сервиса}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, sklearn, hydra, Flask, Docker, Kubernetes}}}{}
           \resumeItemListStart
-            \resumeItem{\normalsize{Организовал гибкий пайплайн обучения и инференса для модели классификации, упаковал в микросервис и развернул в кластере.} \\
-            \textbf{Ключевые слова: batch inference, Kubernetes, Terraform, MLOps, Github Actions}}
+            \resumeItem{\normalsize{Организовал гибкий пайплайн обучения и инференса для модели классификации, упаковал в микросервис и развернул в кластере k8s (VKCS).}}
+            \resumeItem{\normalsize{\textbf{Ключевые слова: batch/online inference, helm, terraform, MLOps, Github Actions}}}
           \resumeItemListEnd 
 
       \resumeProjectHeading
           {\href{https://gitlab.com/sudotouchwoman/golang-k8s-ci-example}{\textbf{\large{\underline{CI/CD для сервиса на Go}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Golang, Gitlab CI, Docker, Kubernetes}}}{}
           \resumeItemListStart
-            \resumeItem{\normalsize{Настроил пайплайны для автотестов и линтеров под CRUD-приложение, его последующей сборки, контейнеризации и развертывания на удаленном сервере или в кластере k8s (VKCS) в виде helm чарта.\\
-            \textbf{Ключевые слова: golangci-lint, gitlab-runner, multistage build, kaniko, helm}}}
+            \resumeItem{\normalsize{Настроил пайплайны для автотестов и линтеров под CRUD-приложение, его последующей сборки, контейнеризации и развертывания на удаленном сервере или в кластере k8s (VKCS) в виде helm чарта.}}
+            \resumeItem{\normalsize{\textbf{Ключевые слова: golangci-lint, gitlab-runner, multistage build, kaniko, helm}}}
           \resumeItemListEnd
 
        \resumeProjectHeading
-          {\href{https://github.com/sudotouchwoman/coursework-networking}{\textbf{\large{\underline{REST API для больничной ИС}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, Flask, Docker, MySQL, Jinja-HTML, bootstrap}}}{}
+          {\href{https://github.com/sudotouchwoman/grafana-influx-nmon}{\textbf{\large{\underline{Дашборд метрик производительности}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, InfluxDB, Grafana}}}{}
           \resumeItemListStart
-            \resumeItem{\normalsize{В рамках КП реализовал веб-интерфейс для информационной системы больницы.
-            }}
+            \resumeItem{\normalsize{Реализовал парсинг и сбор метрик производительности АО сервера с последующей визуализацией результатов в реальном времени.}}
+            \resumeItem{\normalsize{\textbf{Ключевые слова: grafana provisioning, nmon, RxPY, Flux}}}
           \resumeItemListEnd 
 
-      \resumeProjectHeading
-          {\href{https://github.com/sudotouchwoman/Skirmish}{\textbf{\large{\underline{Skirmish}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, CMake, google-test}}}{}
-          \resumeItemListStart
-            \resumeItem{\normalsize{2D шутер, поддерживающий игру по сети. Разработал систему обнаружения и разрешения коллизий между геометрическими примитивами.}}
-          \resumeItemListEnd
-          
           \resumeProjectHeading
           {\href{https://github.com/sudotouchwoman/math-misc}{\textbf{\large{\underline{Пет-проекты в области анализа данных}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, numpy, pandas, sklearn, PyTorch, Plotly}}}{}
           \resumeItemListStart
-            \resumeItem{\normalsize{Сборник небольших проектов, выполненных для себя и в рамках трека ML-разработчик в VK education. \\
-            \textbf{Ключевые слова: классификация, регрессия, линейные модели, ансамбли, линейное программирование, MLP, RNN, временные ряды} }}
+            \resumeItem{\normalsize{Сборник небольших проектов, выполненных в рамках трека ML-разработчик в VK Education либо с целью самообразования.}}
+            \resumeItem{\normalsize{\textbf{Ключевые слова: классификация, регрессия, линейные модели, ансамбли, линейное программирование, MLP, RNN, временные ряды}}}
           \resumeItemListEnd 
 
     \resumeSubHeadingListEnd
@@ -203,15 +204,14 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{\normalsize{Языки программирования:}}{ \normalsize{Python, Golang, C/C++, TypeScript, SQL, \LaTeX{}}} \\
-     \textbf{\normalsize{Инструменты:}}{ \normalsize{VS Code, Visual Studio, PgAdmin, MySQL WB}} \\
-     \textbf{\normalsize{Технологии:}}{\normalsize{ Linux, GitHub, Git, CMake, Docker, Kubernetes, Terraform, MapReduce, Spark}} \\
+     \textbf{\normalsize{Инструменты:}}{ \normalsize{VS Code, Visual Studio, JupyterLab, PgAdmin, MySQL WB}} \\
+     \textbf{\normalsize{Технологии:}}{\normalsize{ Linux, GitHub, Git, CMake, Docker, Kubernetes, Terraform, Grafana, MapReduce, Spark}} \\
      \textbf{\normalsize{Фреймворки:}}{\normalsize{ Flask, PyTorch, PyTorch-Lightning, hydra, sklearn, Plotly, Streamlit, PySpark, Luigi, Gorilla}} \\
-     \textbf{\normalsize{Иностранные языки:}}{\normalsize{ Английский C1 (беглое общение, чтение технической документации)}}
+     \textbf{\normalsize{Иностранные языки:}}{\normalsize{ Английский C1 (свободное общение, чтение технической документации)}}
      \textbf{\normalsize{Дополнительно:}}{ \normalsize{Имею опыт написания unit-тестов (google-test, pytest) и применения CI (Travis, Gitlab-CI, Github Actions)}} \\
     }}
  \end{itemize}
 
 %-----------ADDITIONAL INFO---------------
-% \section{ДОПОЛНИТЕЛЬНО}
 
 \end{document}
