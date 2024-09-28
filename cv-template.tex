@@ -1,0 +1,223 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian, english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome5}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Teterin Nikita}
+    \\ \vspace{2pt}
+    \href{mailto:cv.ne.teterin@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{cv.ne.teterin@gmail.com}} ~
+    \href{https://github.com/sudotouchwoman}{\raisebox{-0.2\height}\faGithub\ \underline{sudotouchwoman}}~
+    \href{https://gitlab.com/sudotouchwoman}{\raisebox{-0.2\height}\faGitlab\ \underline{sudotouchwoman}}~
+    \href{https://t.me/sudotouchwoman}{\raisebox{-0.2\height}\faTelegram\             \underline{sudotouchwoman}} ~
+    \vspace{5pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\vspace{10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Higher School of Economics, 01.04.02}{09.2023 -- currently}
+      {\begin{tabular}{@{}l@{}@{}}
+      Moscow Insitute of Math and Electronics,\\
+      Applied artificial intelligence models, master.
+      \end{tabular}}{Moscow, Russia}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bauman Moscow State Technical University, 09.03.01}{09.2019 -- 06.2023}
+      {\begin{tabular}{@{}l@{}@{}}
+       Department of robotics and complex automation,\\
+       Computer aided design, bachelor.
+      \end{tabular}}{Moscow, Russia}
+  \resumeSubHeadingListEnd
+
+\vspace{3pt}
+
+\section{Certifications}
+\vspace{10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VK Education}{09.2021 -- 12.2022}
+      {Graduated from primary educational program, Machine Learning track.}{Moscow, Russia}
+  \resumeSubHeadingListEnd
+
+\vspace{3pt}
+
+\section{Prior Work Expierence}
+\vspace{10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VK AdTech, Backend Developer}{06.2023 -- currently}
+        {\begin{tabular}{@{}l@{}@{}}
+        Statistics Pipeline team. Maintenance and infrastructure optimization. \\
+        \end{tabular}}{Moscow, Russia}
+
+\vspace{10pt}
+
+    \resumeSubheading
+      {Sber Robotics Lab, Python Developer Intern}{11.2022 -- 02.2023}
+        {\begin{tabular}{@{}l@{}@{}}
+        Created Web-UI for ESP32 configuration and tracing. \\
+        Research on semantic segmentation of RGB-D images.\\
+        \end{tabular}}{Moscow, Russia}
+  \resumeSubHeadingListEnd
+
+\vspace{3pt}
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{https://github.com/made-ml-in-prod-2022/sudotouchwoman}{\textbf{\large{\underline{Production-ready ML service example}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{python, sklearn, hydra, Flask, Docker, Kubernetes}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Model training and inference pipelines with hydra, deployed to k8s (VKCS) with helm as a Flask web app.}}
+            \resumeItem{\normalsize{\textbf{Keywords: batch/online inference, helm, terraform, MLOps, Github Actions}}}
+          \resumeItemListEnd 
+
+      \resumeProjectHeading
+          {\href{https://gitlab.com/sudotouchwoman/csec-manifests}{\textbf{\large{\underline{GitOps-themed CTF}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Golang, Gitlab CI, Docker, Kubernetes}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Showcase of various infrastructure vulnerabilities.
+            IaaC for Go: linting/testing, multistage kaniko build and multi-project deployment pipelines with self-hosted Gitlab runner instance. }}
+            \resumeItem{\normalsize{\textbf{Keywords: Go, Gitlab CI}}}
+          \resumeItemListEnd
+
+       \resumeProjectHeading
+          {\href{https://github.com/sudotouchwoman/grafana-influx-nmon}{\textbf{\large{\underline{Performance metrics dashboard}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{python, InfluxDB, Grafana}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Implemented realtime hardware metric collection for an isolated remote host. \\
+            Stream metrics to Influx and visualize on a Grafana dashboard.}}
+            \resumeItem{\normalsize{\textbf{Keywords: grafana provisioning, nmon, RxPY, Flux}}}
+          \resumeItemListEnd 
+
+    \resumeSubHeadingListEnd
+\vspace{2pt}
+
+%-----------TECH STACK-----------
+\section{Tech Stack}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{PL:}}{ \normalsize{Python, Golang, C/C++, TypeScript, \LaTeX{}}} \\
+     \textbf{\normalsize{Technologies:}}{\normalsize{ Kafka, Clickhouse, HDFS, S3, Kubernetes, Terraform, Prometheus, Spark}} \\
+    }}
+ \end{itemize}
+
+%-----------ADDITIONAL INFO---------------
+
+\end{document}
