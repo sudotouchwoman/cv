@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -12,7 +12,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian, english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{graphicx}
 \setlength{\multicolsep}{-3.0pt}
@@ -117,106 +116,138 @@
 %----------HEADING----------
 
 \begin{center}
-    {\Huge \scshape Teterin Nikita}
-    \\ \vspace{2pt}
-    \href{mailto:cv.ne.teterin@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{cv.ne.teterin@gmail.com}} ~
-    \href{https://github.com/sudotouchwoman}{\raisebox{-0.2\height}\faGithub\ \underline{sudotouchwoman}}~
-    \href{https://gitlab.com/sudotouchwoman}{\raisebox{-0.2\height}\faGitlab\ \underline{sudotouchwoman}}~
-    \href{https://t.me/sudotouchwoman}{\raisebox{-0.2\height}\faTelegram\             \underline{sudotouchwoman}} ~
-    \vspace{5pt}
+  {\Huge \scshape Nikita Teterin}
+  \\ \vspace{2pt}
+  \href{mailto:cv.ne.teterin@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{cv.ne.teterin@gmail.com}} ~
+  \href{https://github.com/sudotouchwoman}{\raisebox{-0.2\height}\faGithub\ \underline{sudotouchwoman}}~
+  \href{https://gitlab.com/sudotouchwoman}{\raisebox{-0.2\height}\faGitlab\ \underline{sudotouchwoman}}~
+  \href{https://t.me/sudotouchwoman}{\raisebox{-0.2\height}\faTelegram\ \underline{sudotouchwoman}} ~
+  \vspace{5pt}
 \end{center}
 
-%-----------EDUCATION-----------
+% Bio
+\section{Bio}
+
+Backend engineer focused on distributed systems, real-time analytics, and ML infrastructure.  \\
+Interested in Linux/NixOS, self-hosting, automation, and reliable production systems.
+
+\vspace{3pt}
+
+% Prior work experience
+\section{Prior Work Experience}
+\vspace{10pt}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Backend Software Engineer at Ozon Tech}{11.2024 -- Present}
+{\begin{tabular}{@{}l@{}@{}}
+    Developing services for a real-time analytics BI platform, focusing on event delivery, \\
+    resource efficiency, and reliability. Reviewed designs and code for backend systems, \\
+    helped document operational practices, and contributed to cross-team delivery \\
+    of analytics and stability features. \\
+  \end{tabular}}{Moscow, Russia}
+
+\vspace{10pt}
+
+\resumeSubheading
+{Developer at VK, AdTech}{06.2023 -- 11.2024}
+{\begin{tabular}{@{}l@{}@{}}
+    Worked on high-volume advertising statistics infrastructure, including attribution logic, \\
+    S2S integrations, and charging. Implemented startup bootstrapping for stateful \\
+    backend services and improvements for event processing orchestration. \\
+  \end{tabular}}{Moscow, Russia}
+\vspace{10pt}
+
+\resumeSubheading
+{Intern at Sber Robotics Lab}{11.2022 -- 02.2023}
+{\begin{tabular}{@{}l@{}@{}}
+    Created Web-UI for ESP32 configuration and tracing in Python. \\
+    Conducted research on semantic segmentation of RGB-D images.  \\
+  \end{tabular}}{Moscow, Russia}
+
+\resumeSubHeadingListEnd
+
+\vspace{3pt}
+
+% Education
 \section{Education}
 \vspace{10pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Higher School of Economics, 01.04.02}{09.2023 -- currently}
-      {\begin{tabular}{@{}l@{}@{}}
-      Moscow Insitute of Math and Electronics,\\
-      Applied artificial intelligence models, master.
-      \end{tabular}}{Moscow, Russia}
-  \resumeSubHeadingListEnd
 
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bauman Moscow State Technical University, 09.03.01}{09.2019 -- 06.2023}
-      {\begin{tabular}{@{}l@{}@{}}
-       Department of robotics and complex automation,\\
-       Computer aided design, bachelor.
-      \end{tabular}}{Moscow, Russia}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Higher School of Economics, 01.04.02}{09.2023 -- 06.2026}
+{\begin{tabular}{@{}l@{}@{}}
+    Moscow Institute of Math and Electronics, \\
+    Master's degree: Applied artificial intelligence models.
+  \end{tabular}}{Moscow, Russia}
 
 \vspace{3pt}
 
+\resumeSubheading
+{Bauman Moscow State Technical University, 09.03.01}{09.2019 -- 06.2023}
+{\begin{tabular}{@{}l@{}@{}}
+    Department of robotics and complex automation, \\
+    Bachelor's degree: Computer aided design.
+  \end{tabular}}{Moscow, Russia}
+
+\resumeSubHeadingListEnd
+
+\vspace{3pt}
+
+% Certifications
 \section{Certifications}
 \vspace{10pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {VK Education}{09.2021 -- 12.2022}
-      {Graduated from primary educational program, Machine Learning track.}{Moscow, Russia}
-  \resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{VK Education}{09.2021 -- 12.2022}
+{Graduated from primary educational program, Machine Learning track.}{Moscow, Russia}
+
+\resumeSubHeadingListEnd
 
 \vspace{3pt}
 
-\section{Prior Work Expierence}
-\vspace{10pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {VK AdTech, Backend Developer}{06.2023 -- currently}
-        {\begin{tabular}{@{}l@{}@{}}
-        Statistics Pipeline team. Maintenance and infrastructure optimization. \\
-        \end{tabular}}{Moscow, Russia}
-
-\vspace{10pt}
-
-    \resumeSubheading
-      {Sber Robotics Lab, Python Developer Intern}{11.2022 -- 02.2023}
-        {\begin{tabular}{@{}l@{}@{}}
-        Created Web-UI for ESP32 configuration and tracing. \\
-        Research on semantic segmentation of RGB-D images.\\
-        \end{tabular}}{Moscow, Russia}
-  \resumeSubHeadingListEnd
-
-\vspace{3pt}
-
-%-----------PROJECTS-----------
+% Personal projects
 \section{Personal Projects}
-    \resumeSubHeadingListStart
-       \resumeProjectHeading
-          {\href{https://github.com/made-ml-in-prod-2022/sudotouchwoman}{\textbf{\large{\underline{Production-ready ML service example}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{python, sklearn, hydra, Flask, Docker, Kubernetes}}}{}
-          \resumeItemListStart
-            \resumeItem{\normalsize{Model training and inference pipelines with hydra, deployed to k8s (VKCS) with helm as a Flask web app.}}
-            \resumeItem{\normalsize{\textbf{Keywords: batch/online inference, helm, terraform, MLOps, Github Actions}}}
-          \resumeItemListEnd 
+\resumeSubHeadingListStart
 
-      \resumeProjectHeading
-          {\href{https://gitlab.com/sudotouchwoman/csec-manifests}{\textbf{\large{\underline{GitOps-themed CTF}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Golang, Gitlab CI, Docker, Kubernetes}}}{}
-          \resumeItemListStart
-            \resumeItem{\normalsize{Showcase of various infrastructure vulnerabilities.
-            IaaC for Go: linting/testing, multistage kaniko build and multi-project deployment pipelines with self-hosted Gitlab runner instance. }}
-            \resumeItem{\normalsize{\textbf{Keywords: Go, Gitlab CI}}}
-          \resumeItemListEnd
+\resumeProjectHeading
+{\textbf{\large{\underline{Soy Phenotyping Automation}}} $|$ \large{\underline{torch, transformers, ultralytics, CVAT, LabelStudio}}}{}
+\vspace{1pt}
 
-       \resumeProjectHeading
-          {\href{https://github.com/sudotouchwoman/grafana-influx-nmon}{\textbf{\large{\underline{Performance metrics dashboard}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{python, InfluxDB, Grafana}}}{}
-          \resumeItemListStart
-            \resumeItem{\normalsize{Implemented realtime hardware metric collection for an isolated remote host. \\
-            Stream metrics to Influx and visualize on a Grafana dashboard.}}
-            \resumeItem{\normalsize{\textbf{Keywords: grafana provisioning, nmon, RxPY, Flux}}}
-          \resumeItemListEnd 
+\resumeItemListStart
 
-    \resumeSubHeadingListEnd
+\resumeItem{\normalsize{RnD for a soybean field video-processing pipeline using segmentation, depth estimation, detection, and counting models to score plant coverage and plot quality.}}
+\resumeItem{\normalsize{Experiment design, data collection and processing, manual/model-assisted annotation, model selection and testing.}}
+\resumeItem{\normalsize{\textbf{Keywords: RnD, agriculture automation, segmentation, zero-shot, fine-tuning}}}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://github.com/made-ml-in-prod-2022/sudotouchwoman}{\textbf{\large{\underline{Production-ready ML service demo}}}} $|$ \large{\underline{python, sklearn, hydra, Flask, Docker, Kubernetes}}}{}
+\vspace{1pt}
+
+\resumeItemListStart
+
+\resumeItem{\normalsize{Model training and inference pipelines with hydra, deployed to k8s (VKCS) with helm as a Flask web app.}}
+\resumeItem{\normalsize{\textbf{Keywords: batch/online inference, helm, terraform, MLOps, GitHub Actions}}}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 \vspace{2pt}
 
 %-----------TECH STACK-----------
 \section{Tech Stack}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{\normalsize{PL:}}{ \normalsize{Python, Golang, C/C++, TypeScript, \LaTeX{}}} \\
-     \textbf{\normalsize{Technologies:}}{\normalsize{ Kafka, Clickhouse, HDFS, S3, Kubernetes, Terraform, Prometheus, Spark}} \\
-    }}
- \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{\normalsize{PL:}}{ \normalsize{Golang, Python, C/C++, \LaTeX{}}} \\
+        \textbf{\normalsize{Technologies:}}{\normalsize{ Kafka, Clickhouse, HDFS, S3, Kubernetes, Terraform, Prometheus, Spark, NixOS}} \\
+        }}
+\end{itemize}
 
 %-----------ADDITIONAL INFO---------------
 
