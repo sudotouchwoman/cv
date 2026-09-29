@@ -60,11 +60,12 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+\newcommand{\resumeItem}[1]{\item \normalsize #1}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]%
 }
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 \newcommand{\classesList}[4]{
     \item\small{
@@ -75,25 +76,9 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{\large#1} & \textbf{\small #2} \\
-      \textit{\large#3} & \textit{\small #4} \\
-      
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+      \textbf{\large#1} & \raisebox{0.4ex}{\textbf{\small #2}} \\ [2pt]
+      {\normalsize#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -103,8 +88,13 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeBody}[1]{%
+  \par\vspace{2pt}%
+  \noindent\begin{minipage}{1.0\linewidth}%
+    #1%
+  \end{minipage}\par%
+}
 
 \newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
 
@@ -119,8 +109,8 @@
   {\Huge \scshape Nikita Teterin}
   \\ \vspace{2pt}
   \href{mailto:cv.ne.teterin@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{cv.ne.teterin@gmail.com}} ~
+  \href{https://www.linkedin.com/in/nte-63b04443b}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}~
   \href{https://github.com/sudotouchwoman}{\raisebox{-0.2\height}\faGithub\ \underline{sudotouchwoman}}~
-  \href{https://gitlab.com/sudotouchwoman}{\raisebox{-0.2\height}\faGitlab\ \underline{sudotouchwoman}}~
   \href{https://t.me/sudotouchwoman}{\raisebox{-0.2\height}\faTelegram\ \underline{sudotouchwoman}} ~
   \vspace{5pt}
 \end{center}
@@ -128,8 +118,8 @@
 % Bio
 \section{Bio}
 
-Backend engineer focused on distributed systems, real-time analytics, and ML infrastructure.  \\
-Interested in Linux/NixOS, self-hosting, automation, and reliable production systems.
+Backend/platform engineer building high-throughput analytics systems, event pipelines, and reliable production services. \\
+Interested in Linux/NixOS, ML infrastructure, self-hosting, and automation.
 
 \vspace{3pt}
 
@@ -140,35 +130,51 @@ Interested in Linux/NixOS, self-hosting, automation, and reliable production sys
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Backend Software Engineer at Ozon Tech}{11.2024 -- Present}
-{\begin{tabular}{@{}l@{}@{}}
-    Developing services for a real-time analytics BI platform, focusing on event delivery, \\
-    resource efficiency, and reliability. Reviewed designs and code for backend systems, \\
-    helped document operational practices, and contributed to cross-team delivery \\
-    of analytics and stability features. \\
-  \end{tabular}}{Moscow, Russia}
+{Software Engineer at OzonTech, Real-time analytics platform}{11.2024 -- Present}
+{}{Moscow, Russia}
 
-\vspace{10pt}
+\resumeBody{
+\normalsize Develop services for a BI platform processing billions of events per day, focusing on delivery reliability, resource efficiency, and operational stability. Review backend systems, document operational practices, and contribute to cross-team delivery of analytics and stability features.
+
+\resumeItemListStart
+\resumeItem{{Owned a core real-time attribution service processing millions of events per second.}}
+\resumeItem{{Reduced storage footprint by hundreds of TB and CPU demand by hundreds of cores through service- and system-level optimizations.}}
+\resumeItem{{Redesigned stress-test data preparation and load-generation workflows to support larger test datasets and more realistic client traffic.}}
+\resumeItemListEnd
+}
+
+\vspace{6pt}
 
 \resumeSubheading
 {Developer at VK, AdTech}{06.2023 -- 11.2024}
-{\begin{tabular}{@{}l@{}@{}}
-    Worked on high-volume advertising statistics infrastructure, including attribution logic, \\
-    S2S integrations, and charging. Implemented startup bootstrapping for stateful \\
-    backend services and improvements for event processing orchestration. \\
-  \end{tabular}}{Moscow, Russia}
-\vspace{10pt}
+{}{Moscow, Russia}
+
+\resumeBody{
+\normalsize Worked on high-volume advertising statistics infrastructure, including attribution logic, S2S integrations, and charging.
+
+\resumeItemListStart
+\resumeItem{{Reduced stateful service startup time from minutes to seconds via startup-state bootstrapping.}}
+\resumeItem{{Migrated multi-stage event-processing orchestration from a shared database to a dedicated service API, reducing coupling between pipeline components.}}
+\resumeItem{{Built a unified entry point for cross-department S2S integrations and coordinated migration across affected teams.}}
+\resumeItemListEnd
+}
+
+\vspace{6pt}
 
 \resumeSubheading
 {Intern at Sber Robotics Lab}{11.2022 -- 02.2023}
-{\begin{tabular}{@{}l@{}@{}}
-    Created Web-UI for ESP32 configuration and tracing in Python. \\
-    Conducted research on semantic segmentation of RGB-D images.  \\
-  \end{tabular}}{Moscow, Russia}
+{}{Moscow, Russia}
+
+\resumeBody{
+\resumeItemListStart
+\resumeItem{{Built Python desktop tooling for ESP32 configuration, diagnostics, and UART tracing.}}
+\resumeItem{{Conducted RGB-D segmentation experiments for robotic suction-gripper automation, including data preparation, model training, and evaluation.}}
+\resumeItemListEnd
+}
 
 \resumeSubHeadingListEnd
 
-\vspace{3pt}
+\vspace{2pt}
 
 % Education
 \section{Education}
@@ -179,73 +185,54 @@ Interested in Linux/NixOS, self-hosting, automation, and reliable production sys
 \resumeSubheading
 {Higher School of Economics, 01.04.02}{09.2023 -- 06.2026}
 {\begin{tabular}{@{}l@{}@{}}
-    Moscow Institute of Math and Electronics, \\
-    Master's degree: Applied artificial intelligence models.
+    Moscow Institute of Math and Electronics. \\
+    Master's degree in Applied Artificial Intelligence Models.
   \end{tabular}}{Moscow, Russia}
 
-\vspace{3pt}
+\vspace{13pt}
 
 \resumeSubheading
 {Bauman Moscow State Technical University, 09.03.01}{09.2019 -- 06.2023}
 {\begin{tabular}{@{}l@{}@{}}
-    Department of robotics and complex automation, \\
-    Bachelor's degree: Computer aided design.
+    Department of Robotics and Complex Automation. \\
+    Bachelor's degree in Computer Aided Design.
   \end{tabular}}{Moscow, Russia}
 
 \resumeSubHeadingListEnd
 
-\vspace{3pt}
+\vspace{2pt}
 
-% Certifications
-\section{Certifications}
+% Research
+\section{Research}
+\resumeSubHeadingListStart
+
 \vspace{10pt}
 
-\resumeSubHeadingListStart
-
 \resumeSubheading
-{VK Education}{09.2021 -- 12.2022}
-{Graduated from primary educational program, Machine Learning track.}{Moscow, Russia}
+{\href{https://doi.org/10.3390/s26196171}{Automated Ranking of Soybean Plots from RGB Video}}{10.2025 -- 09.2026}
+{}{}
+
+\vspace{-7pt}
+
+\resumeBody{
+\normalsize{First author. Published in \textit{Sensors} 2026, 26(19), 6171. \href{https://doi.org/10.3390/s26196171}{doi:10.3390/s26196171}. Built a video-based ranking pipeline that scores soybean bed quality from close-range RGB by aggregating monocular depth, semantic plant area, and pod keypoint counts.}
+\resumeItemListStart
+\resumeItem{Developed and evaluated an end-to-end video-processing pipeline on a controlled dataset across indoor and outdoor scenes.}
+\resumeItem{Experimented with multiple image annotation automation methods and object detection SFT (YOLO, DETR).}
+\resumeItem{Suppressed background clutter with Depth Anything 3, distilled zero-shot SAM3 segmentation into a lightweight SegFormer for edge deployment, and estimated pod counts with P2PNet.}
+\resumeItemListEnd
+}
 
 \resumeSubHeadingListEnd
 
-\vspace{3pt}
-
-% Personal projects
-\section{Personal Projects}
-\resumeSubHeadingListStart
-
-\resumeProjectHeading
-{\textbf{\large{\underline{Soy Phenotyping Automation}}} $|$ \large{\underline{torch, transformers, ultralytics, CVAT, LabelStudio}}}{}
-\vspace{1pt}
-
-\resumeItemListStart
-
-\resumeItem{\normalsize{RnD for a soybean field video-processing pipeline using segmentation, depth estimation, detection, and counting models to score plant coverage and plot quality.}}
-\resumeItem{\normalsize{Experiment design, data collection and processing, manual/model-assisted annotation, model selection and testing.}}
-\resumeItem{\normalsize{\textbf{Keywords: RnD, agriculture automation, segmentation, zero-shot, fine-tuning}}}
-
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\href{https://github.com/made-ml-in-prod-2022/sudotouchwoman}{\textbf{\large{\underline{Production-ready ML service demo}}}} $|$ \large{\underline{python, sklearn, hydra, Flask, Docker, Kubernetes}}}{}
-\vspace{1pt}
-
-\resumeItemListStart
-
-\resumeItem{\normalsize{Model training and inference pipelines with hydra, deployed to k8s (VKCS) with helm as a Flask web app.}}
-\resumeItem{\normalsize{\textbf{Keywords: batch/online inference, helm, terraform, MLOps, GitHub Actions}}}
-
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
 \vspace{2pt}
 
 %-----------TECH STACK-----------
 \section{Tech Stack}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{\normalsize{PL:}}{ \normalsize{Golang, Python, C/C++, \LaTeX{}}} \\
-        \textbf{\normalsize{Technologies:}}{\normalsize{ Kafka, Clickhouse, HDFS, S3, Kubernetes, Terraform, Prometheus, Spark, NixOS}} \\
+        \textbf{\normalsize{Lang:}}{{ Go (Golang), Python, C/C++ | \textbf{\normalsize{Backend:}} gRPC, OpenAPI, SQL, pprof }} \\
+        \textbf{\normalsize{Data/Infra:}}{{ Kafka, ClickHouse, Postgres, HDFS, Spark, Airflow, etcd, Kubernetes, GitLab CI/CD, Prometheus, Grafana }}
         }}
 \end{itemize}
 
